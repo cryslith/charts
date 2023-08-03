@@ -11,8 +11,8 @@
 #CDTITLE:;
 #SAMPLESTART:0.000000;
 #SAMPLELENGTH:0.000000;
-// ITG offset (null offset = 0.952)
-#OFFSET:0.961;
+// ITG offset (null offset = 0.955)
+#OFFSET:0.964;
 #BPMS:0.000=155.000;
 #STOPS:;
 #BGCHANGES:;
