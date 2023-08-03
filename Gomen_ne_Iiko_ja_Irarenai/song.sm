@@ -1,14 +1,18 @@
-#TITLE:Gomen ne, Iiko ja Irarenai;
+#TITLE:ごめんね、いい子じゃいられない。;
+#TITLETRANSLIT:Gomen ne, Iiko ja Irarenai.;
 #SUBTITLE:;
-#ARTIST:Sawai Miku;
+#ARTIST:沢井 美空;
+#ARTISTTRANSLIT:Sawai Miku;
 #MUSIC:gomen.mp3;
+#GENRE:J-pop;
 #BANNER:;
 #BACKGROUND:;
 #LYRICSPATH:;
 #CDTITLE:;
 #SAMPLESTART:0.000000;
 #SAMPLELENGTH:0.000000;
-#OFFSET:0.952;
+// ITG offset (null offset = 0.952)
+#OFFSET:0.961;
 #BPMS:0.000=155.000;
 #STOPS:;
 #BGCHANGES:;
@@ -19,9 +23,9 @@
 //---------------dance-single - ---------------
 #NOTES:
      dance-single:
-     :
+     elestrophe:
      Medium:
-     9:
+     10:
      0,0,0,0,0:
 // measure 0
 0000
