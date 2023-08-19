@@ -23,8 +23,12 @@ times = [
     3.827,
     4.466,
     (5.121, 9),
-    8.922,
+    8.991,
     (38.618, 61),
+    39.588,
+    (42.389, 67),
+    44.974,
+    46.259,
     25.729,
     23.167,
     (52.7, 83),
@@ -83,10 +87,15 @@ def offset(nps, b, approx_offset):
 
 def plot(times, notecounts, nps, b):
     import matplotlib.pyplot as plt
-    plt.plot(times, [nps*x + b for x in times])
-    plt.plot(times, notecounts, 'r+')
-    plt.show()
+    beatcounts = [x * bpm_notetype / notetype for x in notecounts]
+    fig, axs = plt.subplots(2)
 
+    axs[0].plot(beatcounts, [(x - b)/nps for x in notecounts])
+    axs[0].plot(beatcounts, times, 'r+')
+
+    axs[1].plot(beatcounts, [0]*len(beatcounts))
+    axs[1].plot(beatcounts, [y - (x - b)/nps for (x, y) in zip(notecounts, times)], 'r+')
+    plt.show()
 
 def main():
     notecounts = guess_notecounts(times, given_notecounts, nps)
